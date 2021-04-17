@@ -62,12 +62,12 @@ router.beforeEach((to,from,next)=>{
       if (item.meta.title) {
           document.title = item.meta.title;
       } else {
-          document.title = '觅享相册';
+          document.title = 'vue基础框架搭建';
 
       }
 
   } else {
-      document.title = '觅享相册';
+      document.title = 'vue基础框架搭建';
       document.querySelector("body").style.background = null;
 
   }

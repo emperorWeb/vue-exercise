@@ -3,15 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" name="viewport" />
+    <!-- 禁止浏览器从本地计算机的缓存中访问页面内容，这样设定，访问者将无法脱机浏览 -->
+    <meta http-equiv="pragram" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="expires" content="0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>vue-exercise</title>
+    <title>vue基础框架搭建</title>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but vue-exercise doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
+
     <!-- built files will be auto injected -->
+
+    <script>
+      if (location.href.indexOf("/common/imagePreview") > -1) {
+        document.querySelector("body").style.background = "#000";
+      }
+    </script>
   </body>
 </html>
