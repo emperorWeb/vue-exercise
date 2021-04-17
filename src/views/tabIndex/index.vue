@@ -1,6 +1,6 @@
 <template>
     <div class="tab-admin">
-        <div class="admin-list" @click="adminBtn">测试</div>
+        <div class="admin-list" @click="adminBtn">测试加快</div>
     </div>
 </template>
 <script>
