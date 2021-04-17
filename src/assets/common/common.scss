@@ -1,0 +1,172 @@
+@import "reset.scss";
+@import "resetvant.scss";
+@import "1px.scss";
+@import "flex.scss";
+
+.viewport {
+    min-width: 320px;
+    max-width: 750px;
+    width: 750px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 26px;
+    position: relative;
+    -webkit-user-select: text;
+    user-select: text;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dz-nowrap {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dz-bold {
+    font-weight: bold;
+}
+
+.dz-bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dz-radio {
+    display: block;
+    width: 41px;
+    height: 41px;
+    background: url("https://oss.fjdaze.com/toolsApp/common/dz-radio@2x.png") center no-repeat;
+    background-size: 40px 40px;
+
+    &.checked {
+        background-image: url("https://oss.fjdaze.com/toolsApp/common/radio-checked@2x.png");
+    }
+    &.checkeds {
+        background-image: url("https://oss.fjdaze.com/toolsApp/common/checked-part@2x.png");
+    }
+}
+
+.dz-btn {
+    color: #fff;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    line-height: 62px;
+    background: linear-gradient(to right, #93aad7, #7f7dd9);
+    border-radius: 30px;
+    font-size: 30px;
+
+    &.plain {
+        color: #666;
+        background: transparent;
+
+        &::after {
+            border-radius: 60px;
+            border-color: #000;
+        }
+    }
+}
+
+.dz-nowrap-multi {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+}
+.dz-line {
+    background: #f2f2f2;
+    height: 20px;
+}
+.dz-flexaglin-center {
+    display: flex;
+    align-items: center;
+}
+
+.help-tips {
+    position: relative;
+    left: 10px;
+    top: 3px;
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+    background: url("https://oss.fjdaze.com/toolsApp/common/help-tips.png?v=1") center no-repeat;
+    background-size: cover;
+}
+
+.cell-list {
+    background: #fff;
+
+    .cell-item {
+        position: relative;
+        padding: 0 30px;
+        height: 132px;
+
+        &:last-child {
+            &::after {
+                border: none;
+            }
+        }
+    }
+    .cell-icon {
+        width: 92px;
+        height: 92px;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+
+    .cell-title {
+        font-size: 30px;
+        color: #333;
+    }
+
+    .cell-desc {
+        padding-top: 3px;
+        font-size: 24px;
+        color: #808080;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        word-break: break-all;
+        span {
+            padding-right: 10px;
+        }
+    }
+
+    .iconfont {
+        font-size: 28px;
+        color: #999999;
+    }
+}
+
+.message-board-box {
+    width: 750px;
+    height: 50px;
+    background: #fff;
+}
+
+.cancel-btn {
+    width: 220px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    border: solid 1px #999999;
+    text-align: center;
+}
+
+.confirm-btn {
+    width: 220px;
+    height: 80px;
+    line-height: 80px;
+    background-image: linear-gradient(90deg, #8993d8 0%, #7f7dd9 100%), linear-gradient(#ffffff, #ffffff);
+    background-blend-mode: normal, normal;
+    border-radius: 40px;
+    text-align: center;
+    color: #fff;
+}
